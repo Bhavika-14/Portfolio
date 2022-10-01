@@ -16,7 +16,7 @@ export default function Home(){
         <h1 className="text-center"><span className="fw-bold">About</span>
         <span className="textcolor fw-bold"> Me</span>
         </h1>
-        <div className="container col-6  txt">
+        <div className="container col-6">
             <p className="text-center fs-4">
                 Hello, I am Bhavika Aggarwal. I am a second year student pursuing Computer Science Engineering.
                 I am into Full Stack Development. I like Competitive Programming too. I am a Machine Learning Enthusiast.
