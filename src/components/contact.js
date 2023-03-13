@@ -4,6 +4,7 @@ import './components.css'
 export default function Contact(){
     return(
         <>
+        <div className="my-4">
         <h1 className="text-center"><span className="fw-bold">Get In</span>
         <span className="textcolor fw-bold"> Touch</span>
         </h1>
@@ -23,6 +24,7 @@ export default function Contact(){
             <button type="submit" class="btn btn-primary">Submit</button>
             </div>
 
+        </div>
         </div>
         </>
     )
