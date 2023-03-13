@@ -1,49 +1,33 @@
 import React from "react"
 import './components.css'
-import img1 from './linkedin.png'
-import img2 from './github.png'
-import img3 from './mail.png'
+import linkedin from './assets/linkedin.png'
+import github from './assets/icons8-github-48 (1).png'
+import mail from './assets/gmail.png'
 
 
 export default function Footer(){
 
     return(
-        <footer className="position-bottom bg-dark footer">
+        <footer className="position-bottom bg-dark">
             <div className="container">
                 <div className="row">
-                    <div className="col-6 mt-1">
-                        <div className="col-4">
-                        <p className="text-white">
+                    <div className="col-4 mt-4 ps-4">
+                        
+                        <p className="text-white pt-4">
                             
                             Thankyou, for visiting my portfolio website.
                         </p>
-                        </div>
+                        
                     </div>
-                    <div className="col-6">
-                        <div className="row">
-                            <div className="col-6"></div>
-                        <div className="col-2">
-                          <a href="https://www.linkedin.com/in/bhavika-aggarwal-963aaa221">
-                            <img className="img1" src={img1}></img>
-                          </a>
-                        </div>
-                          
-                        <div className="col-2">
-                        <a href="https://github.com/Bhavika-14">
-                            <img className="img2" src={img2}></img>
-                          </a>
-
-                        </div> 
-                        <div className="col-1">
-                        <a href="mailto:bhavikaagarwal2002@gmail.com">
-                            <img className="img2" src={img3}></img>
-                          </a>
-
-                        </div> 
-                        </div> 
+                    <div className="col-8 text-end mt-4 pe-4">
+                        <a href="https://www.linkedin.com/in/bhavika-aggarwal-963aaa221"><img className="bg-light rounded-5 m-2" src={linkedin} /></a>
+                        <a href="https://github.com/Bhavika-14"><img className="bg-light rounded-5 m-2" src={github} /></a>
+                        <a href="mailto:bhavikaagarwal2002@gmail.com"><img className="bg-light rounded-5 m-2" src={mail} /></a>
+                        
+                        
                     </div>
                 </div>
-                <div className="row text-white text-center">
+                <div className="row text-white text-center pb-4">
                     <div className="col-4"></div>
                     <div className="col-4">
                     Designed with ❤️ by Bhavika Aggarwal
