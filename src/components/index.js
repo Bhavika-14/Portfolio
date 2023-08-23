@@ -50,7 +50,7 @@ export default function Home(){
                 <a href="mailto:bhavikaagarwal2002@gmail.com"><img className="m-1" src={gmail} /></a>
             </div>
             <div className="text-center p-4 pb-5">
-                <a href="https://drive.google.com/file/d/1ubygmRTbYER6fVkggsnwGbK06rwq-1VG/view?usp=sharing" tzrget="_blank">
+                <a href="https://drive.google.com/file/d/1ubygmRTbYER6fVkggsnwGbK06rwq-1VG/view?usp=sharing" target="_blank">
                 <button className="btn btn-warning btn-lg"><div className="px-2 fs-4">My Resume</div>
 
                 </button>
