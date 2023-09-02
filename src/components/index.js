@@ -45,13 +45,13 @@ export default function Home(){
 
             </p>
             <div className="text-center p-4">
-                <a href="https://www.linkedin.com/in/bhavika-aggarwal-963aaa221"><img className="m-1" src={linkedin} /></a>
-                <a href="https://github.com/Bhavika-14"><img className="m-1" src={github} /></a>
+                <a href="https://www.linkedin.com/in/bhavika-aggarwal-963aaa221" target="_blank"><img className="m-1" src={linkedin} /></a>
+                <a href="https://github.com/Bhavika-14" target="_blank"><img className="m-1" src={github} /></a>
                 <a href="mailto:bhavikaagarwal2002@gmail.com"><img className="m-1" src={gmail} /></a>
             </div>
             <div className="text-center p-4 pb-5">
                 <a href="https://drive.google.com/file/d/1ubygmRTbYER6fVkggsnwGbK06rwq-1VG/view?usp=sharing" target="_blank">
-                <button className="btn btn-warning btn-lg"><div className="px-2 fs-4">My Resume</div>
+                <button className="btn btn-warning btn-lg" target="_blank"><div className="px-2 fs-4">My Resume</div>
 
                 </button>
                 </a>

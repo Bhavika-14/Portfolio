@@ -5,6 +5,7 @@ import joketellingbot from './assets/joketellingbot.png'
 import temperatureconverter from './assets/temperatureconverter.png'
 import ecommerceweb3 from './assets/ecommerceweb3.png'
 import appointmentmanagement from './assets/appointmentmanagement.png'
+import linksphere from "./assets/linksphere.png"
 
 export default function Projects(){
     return(
@@ -14,6 +15,28 @@ export default function Projects(){
             <div className="fs-2 fw-bold text-center m-2 text-white">My Projects</div>
             <div className="container">
             <div className="row py-4 px-2">
+
+            <div className="col-lg-4 col-md-6 p-2">
+                <div className="card_color p-2 rounded-4">
+                <div className="card m-4 project_card">
+                        <img src={linksphere} className="card-img-top" alt=""></img>
+                        <div class="card-body">
+                            <h5 className="card-title">LinkSphere</h5>
+                                <p className="card-text">A social media web application which allows users to create post, like post, add comments and chat with another users.
+                                    <div className="fw-bold">Tech Stack :- Next.js, Firebase, Hardhat, Tailwind CSS, MongoDB</div>
+
+                                </p>
+                            <div className="d-flex justify-content-between">
+                            <div><a href="https://link-sphere.vercel.app/" target="_blank" className="btn btn-dark text-white">Live</a></div>
+                            <div><a href="https://github.com/Bhavika-14/LinkSphere" target="_blank" className="btn btn-dark text-white">Code</a></div>
+                            </div> 
+                            </div>
+                            </div>
+                        
+                    </div>
+                    
+
+                </div>
 
                 <div className="col-lg-4 col-md-6 p-2">
                 <div className="card_color p-2 rounded-4">
@@ -46,7 +69,7 @@ export default function Projects(){
 
                                 </p>
                                 
-                            <a href="https://github.com/Bhavika-14/appointment_management_website" className="btn btn-dark text-white">Code</a>
+                            <a href="https://github.com/Bhavika-14/appointment_management_website" target="_blank" className="btn btn-dark text-white">Code</a>
                             </div>
                             </div>
                         
@@ -54,7 +77,7 @@ export default function Projects(){
                     
 
                 </div>
-                <div className="col-lg-4 col-md-6 p-2">
+                <div className="col-lg-4 col-md-6 p-2 mt-4">
                 <div className="card_color p-2 rounded-4">
                 <div className="card m-4 project_card">
                         <img src={crm} className="card-img-top" alt=""></img>
@@ -65,7 +88,7 @@ export default function Projects(){
                             <div className="fw-bold">
                             Technologies:- MongoDB, React, Express, Bootstrap</div>
                             </p>
-                            <a href="https://github.com/Bhavika-14/crm" className="btn btn-dark text-white">Code</a>
+                            <a href="https://github.com/Bhavika-14/crm" target="_blank" className="btn btn-dark text-white">Code</a>
                             </div>
 
                         
@@ -84,7 +107,7 @@ export default function Projects(){
                                 <p className="card-text">Here, is my portfolio website. It is a frontend project. It showcases my projects, skills and contact information.
                                <div className="fw-bold">Technologies:- HTML, CSS, Javascript, Bootstrap, React</div> 
                                </p>
-                            <a href="https://github.com/Bhavika-14/Portfolio1" className="btn btn-dark text-white">Code</a>
+                            <a href="https://github.com/Bhavika-14/Portfolio1" target="_blank" className="btn btn-dark text-white">Code</a>
                             </div>
 
                         
@@ -105,7 +128,7 @@ export default function Projects(){
                                     <div className="fw-bold">Technologies:- HTML, CSS, Javascript, Bootstrap, React</div>
                                     <br />
                                 
-                            <a href="https://github.com/Bhavika-14/Joke_Telling_Bot" className="btn btn-dark text-white">Code</a>
+                            <a href="https://github.com/Bhavika-14/Joke_Telling_Bot" target="_blank" className="btn btn-dark text-white">Code</a>
                             </div>
 
                         
@@ -115,27 +138,11 @@ export default function Projects(){
 
                 </div>
                 
-                <div className="col-lg-4 col-md-6 p-2 mt-4">
-                <div className="card_color p-2 rounded-4">
-                <div className="card m-4 project_card">
-                        <img src={temperatureconverter} className="card-img-top" alt=""></img>
-                        <div class="card-body">
-                            <h5 className="card-title">Temperature Converter</h5>
-                            <p className="card-text">This is a Frontend project. It is used for converting temperature.
-                                <br /></p>
-                                
-                                <div className="fw-bold">Technologies:- HTML, CSS, Javascript, Bootstrap, React</div>
-                                <br />
-                                
-                            <a href="https://github.com/Bhavika-14/temperature_converter" className="btn btn-dark text-white">Code</a>
-                            </div>
+                
 
-                        
-                    </div>
+                    
 
-                    </div>
-
-                </div>
+            
                 
                 
                 
