@@ -14,7 +14,7 @@ import solidity from './assets/icons8-solidity-48.png'
 import bootstrap from './assets/icons8-bootstrap-48.png'
 import linkedin from './assets/linkedin.png'
 import devto from "./assets/devicon.png"
-import hashnode from "./assets/hashnode.png"
+import hashnode from "./assets/hashnodeicon.png"
 
 
 import truffle from './assets/truffle.png'
