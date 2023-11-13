@@ -13,6 +13,8 @@ import git from './assets/icons8-git-48.png'
 import solidity from './assets/icons8-solidity-48.png'
 import bootstrap from './assets/icons8-bootstrap-48.png'
 import linkedin from './assets/linkedin.png'
+import devto from "./assets/devicon.png"
+import hashnode from "./assets/hashnode.png"
 
 
 import truffle from './assets/truffle.png'
@@ -47,7 +49,9 @@ export default function Home(){
             <div className="text-center p-4">
                 <a href="https://www.linkedin.com/in/bhavika-aggarwal-963aaa221" target="_blank"><img className="m-1" src={linkedin} /></a>
                 <a href="https://github.com/Bhavika-14" target="_blank"><img className="m-1" src={github} /></a>
-                <a href="mailto:bhavikaagarwal2002@gmail.com"><img className="m-1" src={gmail} /></a>
+                <a href="mailto:bhavikaagarwal2002@gmail.com" target="_blank"><img className="m-1" src={gmail} /></a>
+                <a href="https://dev.to/bhavika14" target="_blank"><img className="m-1" src={devto} /></a>
+                <a href="https://bhavikaaggarwal.hashnode.dev/" target="_blank"><img className="m-1" src={hashnode} /></a>
             </div>
             <div className="text-center p-4 pb-5">
                 <a href="https://drive.google.com/file/d/1ubygmRTbYER6fVkggsnwGbK06rwq-1VG/view?usp=sharing" target="_blank">
