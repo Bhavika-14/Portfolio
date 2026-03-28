@@ -6,63 +6,70 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"
+      className="relative overflow-hidden min-h-[90vh] flex items-center"
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 top-0 h-72 w-72 rounded-full bg-sky-500/10 blur-3xl" />
-        <div className="absolute bottom-[-6rem] right-[-4rem] h-80 w-80 rounded-full bg-violet-500/10 blur-3xl" />
-      </div>
+      {/* Animated glow blobs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute bottom-1/4 left-1/2 w-96 h-96 bg-cyan-500/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob" style={{ animationDelay: "4s" }}></div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-12 px-6 py-20 md:flex-row md:items-center md:py-28 motion-safe:animate-fade-in-up">
-        <div className="flex-1 space-y-7">
-          <p className="inline-flex items-center rounded-full border border-slate-800 bg-slate-900/80 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-sky-300">
+      <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center gap-16 px-6 py-20 lg:flex-row lg:items-center lg:py-28 motion-safe:animate-fade-in-up">
+        {/* Text Content */}
+        <div className="flex-1 space-y-8 text-center lg:text-left z-10">
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.2)] backdrop-blur-md">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
             Software Development Engineer
-          </p>
-          <div>
-            <p className="text-sm text-slate-400">Hello, I&apos;m</p>
-            <h1 className="mt-1 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl lg:text-5xl">
-              <span className="bg-gradient-to-r from-sky-400 via-cyan-300 to-violet-400 bg-clip-text text-transparent">
-                {profile.name}
+          </div>
+          
+          <div className="space-y-4">
+            <p className="text-xl font-medium text-indigo-400">
+              Hi, I'm {profile.name}.
+            </p>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl/tight">
+              Building scalable <br className="hidden lg:block" />
+              <span className="text-gradient drop-shadow-sm">
+                backend systems
               </span>
             </h1>
-            <p className="mt-3 text-sm font-medium uppercase tracking-[0.25em] text-slate-500">
-              {profile.title}
-            </p>
           </div>
 
-          <p className="max-w-xl text-sm text-slate-300 sm:text-base">
+          <p className="mx-auto max-w-xl text-base text-slate-400 leading-relaxed lg:mx-0">
             {profile.heroSummary}
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-1">
+          <div className="flex flex-wrap items-center justify-center gap-5 pt-4 lg:justify-start">
             <a
               href={profile.social.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center rounded-full bg-sky-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400"
+              className="btn-primary"
             >
-              Let&apos;s connect on LinkedIn
+              Connect on LinkedIn
             </a>
             {profile.resumeUrl && (
               <a
                 href={profile.resumeUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-full border border-slate-600 bg-slate-950/40 px-5 py-2.5 text-sm font-semibold text-slate-100 transition hover:border-sky-400 hover:text-sky-300"
+                className="btn-outline"
               >
-                Download resume
+                Download Resume
               </a>
             )}
           </div>
         </div>
 
-        <div className="relative flex flex-1 justify-center md:justify-end">
-          <div className="relative h-40 w-40 overflow-hidden rounded-full border border-slate-200 bg-slate-900/70 shadow-[0_0_55px_-18px_rgba(56,189,248,0.7)] sm:h-44 sm:w-44 md:h-48 md:w-48 motion-safe:animate-float">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(56,189,248,0.25),transparent_55%),radial-gradient(circle_at_100%_100%,rgba(139,92,246,0.25),transparent_55%)]" />
+        {/* Image Container */}
+        <div className="relative flex flex-1 justify-center z-10">
+          <div className="relative h-64 w-64 md:h-80 md:w-80 overflow-hidden rounded-[2.5rem] border border-slate-700/50 bg-slate-800/50 shadow-2xl backdrop-blur-sm motion-safe:animate-float transition-all duration-500 hover:shadow-indigo-500/20 group">
+            <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 via-transparent to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <img
               src={profileImage}
               alt={profile.name}
-              className="relative h-full w-full object-cover"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
           </div>
         </div>

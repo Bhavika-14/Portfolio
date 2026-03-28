@@ -42,38 +42,39 @@ export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="bg-slate-950 py-16"
+      className="section-padding relative z-10"
     >
-      <div className="mx-auto max-w-5xl px-6 text-center">
-        <header className="mb-8 motion-safe:animate-fade-in-up">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-400">
+      <div className="mx-auto max-w-5xl text-center">
+        <header className="mb-12 motion-safe:animate-fade-in-up">
+          <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
             Skills
           </p>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">
-            My toolkit
+          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            My <span className="text-gradient">Toolkit</span>
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-400 sm:text-base">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-400">
             Technologies and tools I use most often when building and scaling
             products.
           </p>
         </header>
 
-        <div className="flex flex-wrap justify-center gap-3">
-          {skills.map((name) => {
+        <div className="flex flex-wrap justify-center gap-4">
+          {skills.map((name, index) => {
             const Icon = iconMap[name] || null;
             return (
               <div
                 key={name}
-                className="group flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-xs text-slate-200 shadow-sm shadow-slate-950/70 transition-transform duration-300 hover:-translate-y-0.5 hover:border-sky-400/70 hover:shadow-sky-500/20 motion-safe:animate-fade-in-up"
+                className="group flex items-center gap-3 glass-card rounded-full px-5 py-2.5 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-cyan-500/20 motion-safe:animate-fade-in-up"
+                style={{ animationDelay: `${index * 50}ms` }}
               >
                 {Icon ? (
-                  <Icon className="h-4 w-4 text-slate-100/90 group-hover:text-sky-300" />
+                  <Icon className="h-5 w-5 text-slate-300 transition-colors duration-300 group-hover:text-cyan-400" />
                 ) : (
-                  <div className="flex h-4 w-4 items-center justify-center rounded-full bg-slate-800 text-[9px] font-semibold text-slate-100">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-slate-800 text-[10px] font-bold text-slate-300 group-hover:text-cyan-400 transition-colors">
                     {name.charAt(0)}
                   </div>
                 )}
-                <span>{name}</span>
+                <span className="text-sm font-medium text-slate-200 group-hover:text-white transition-colors">{name}</span>
               </div>
             );
           })}
