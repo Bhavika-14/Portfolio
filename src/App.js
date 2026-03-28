@@ -11,9 +11,11 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50">
+    <div className="relative min-h-screen bg-brand-dark text-slate-100 font-sans overflow-x-hidden selection:bg-brand-primary/30">
+      <div className="fixed inset-0 bg-modern-mesh -z-10 bg-fixed opacity-60"></div>
+      
       <Navbar />
-      <main className="pt-16">
+      <main className="pt-24 lg:pt-28">
         <HeroSection />
         <ExperienceSection />
         <ProjectsSection />

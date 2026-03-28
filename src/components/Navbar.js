@@ -3,39 +3,36 @@ import { profile } from "../data/profile";
 
 export function Navbar() {
   return (
-    <header className="fixed inset-x-0 top-0 z-20 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <a href="#hero" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-violet-500 text-sm font-semibold text-slate-950 shadow-sm">
+    <header className="fixed inset-x-0 top-0 z-50 glass-nav transition-all duration-300">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#hero" className="flex items-center gap-3 group">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-400 text-lg font-bold text-white shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300 group-hover:scale-105">
             B
           </div>
-          <span className="text-sm font-semibold text-slate-100">
+          <span className="text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-slate-400 tracking-wide">
             {profile.name}
           </span>
         </a>
-        <nav className="hidden items-center gap-6 text-sm text-slate-600 dark:text-slate-300 sm:flex">
-          <a href="#experience" className="hover:text-sky-300">
+        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-400 sm:flex">
+          <a href="#experience" className="hover:text-white hover:text-shadow-sm transition-colors duration-200">
             Experience
           </a>
-          <a href="#projects" className="hover:text-sky-300">
+          <a href="#projects" className="hover:text-white hover:text-shadow-sm transition-colors duration-200">
             Projects
           </a>
-          <a href="#skills" className="hover:text-sky-300">
+          <a href="#skills" className="hover:text-white hover:text-shadow-sm transition-colors duration-200">
             Skills
           </a>
-          <a href="#education" className="hover:text-sky-300">
+          <a href="#education" className="hover:text-white hover:text-shadow-sm transition-colors duration-200">
             Education
           </a>
-          <a href="#contact" className="hover:text-sky-300">
-            Contact
-          </a>
         </nav>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           <a
             href="#contact"
-            className="rounded-full bg-sky-500 px-3 py-1.5 text-xs font-semibold text-slate-950 shadow-sm shadow-sky-500/40 transition hover:bg-sky-400 sm:text-sm"
+            className="btn-primary"
           >
-            Get in touch
+            Let's Talk
           </a>
         </div>
       </div>
