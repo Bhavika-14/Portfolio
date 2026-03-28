@@ -1,29 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header.js'
-import Navbar from './components/navbar.js'
-import {BrowserRouter as Router, Switch ,Route, Routes} from 'react-router-dom'
-import {NavLink as Link} from "react-router-dom"
-import Home from './components/index.js'
-import Projects from './components/projects.js'
-import Contact from './components/contact.js'
-import Footer from './components/footer.js'
+import "./index.css";
+import { HeroSection } from "./components/HeroSection";
+import { ExperienceSection } from "./components/ExperienceSection";
+import { ProjectsSection } from "./components/ProjectsSection";
+import { SkillsSection } from "./components/SkillsSection";
+import { EducationSection } from "./components/EducationSection";
+import { CodingSection } from "./components/CodingSection";
+import { ContactSection } from "./components/ContactSection";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Router>
-      <Navbar /> 
-        <Routes>
-          <Route path="/" element={<Home />} /> 
-            <Route index element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
+    <div className="min-h-screen bg-slate-950 text-slate-50">
+      <Navbar />
+      <main className="pt-16">
+        <HeroSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <EducationSection />
+        <CodingSection />
+        <ContactSection />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
