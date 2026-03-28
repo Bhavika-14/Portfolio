@@ -1,0 +1,40 @@
+export const experience = [
+  {
+    company: "Flipkart",
+    role: "Software Development Engineer",
+    start: "Nov 2024",
+    end: "Present",
+    bullets: [
+      "Owned backend development for picking loose staples in dark stores inside the hyperlocal Flipkart Minutes flow—solutioning, LLD, locking down cross-team contracts, and wiring integrations across services while designing for tricky edge cases and failure modes in a distributed setup.",
+      "Shipped an IRT-based stocktake flow that turned a manual, ops-heavy process into a system-driven one. Owned design through build, UAT, and production rollout; removed recurring manual steps and retired a legacy dependency.",
+      "Built backend APIs for migrating non-customer outbound supply chain from a monolith to microservices—aligned contracts with partner teams and integrated end-to-end without breaking existing flows.",
+      "Refactored critical APIs with clearer object-oriented boundaries and tuned database access (queries, indexing), improving maintainability, cutting latency, and keeping services stable under heavy load.",
+      "Ran UAT, handled on-call, and closed production issues with lasting fixes for recurring incidents in core business paths—less noise on alerts and steadier runtime behavior.",
+    ],
+    tech: ["Java", "Spring Boot", "SQL", "Kubernetes"],
+  },
+  {
+    company: "Emendo",
+    role: "SDE Intern",
+    start: "Jan 2024",
+    end: "Oct 2024",
+    bullets: [
+      "Designed and implemented backend services for core features such as material management, invoicing, and estimates.",
+      "Integrated Google Sheets with the material management system using the Google Sheets API to keep sheets and the database in sync.",
+      "Migrated services from a NoSQL to SQL database, including schema design, data transformation, and service-layer changes.",
+      "Implemented federated identity providers with AWS Cognito to deliver secure, standards-based user authentication.",
+    ],
+    tech: [
+      "AWS Lambda",
+      "RDS",
+      "API Gateway",
+      "Cognito",
+      "DynamoDB",
+      "S3",
+      "SNS",
+      "TypeScript",
+      "Sequelize",
+      "Node.js",
+    ],
+  },
+];
